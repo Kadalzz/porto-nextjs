@@ -90,29 +90,31 @@ export default function Home() {
         </div>
       </motion.div>
 
-      {/* Recent Work */}
+     {/* Work Experience */}
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1 }}
+  viewport={{ once: true }}
+  className="mt-16"
+>
+  <h2 className="text-2xl font-semibold mb-4">Work Experience</h2>
+
+  <div className="grid gap-4">
+    {work.map((job, i) => (
       <motion.div
+        key={i}
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className="mt-16"
       >
-        <ViewAllHeader title="Work Experience" pageUrl="/work" itemCount={work.length} />
-        <div className="grid gap-4">
-          {work.slice(0, 3).map((job, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-              viewport={{ once: true }}
-            >
-              <WorkItem {...job} />
-            </motion.div>
-          ))}
-        </div>
+        <WorkItem {...job} />
       </motion.div>
+    ))}
+  </div>
+</motion.div>
+
 
       {/* Recent Projects */}
       <motion.div
@@ -135,34 +137,6 @@ export default function Home() {
               <ProjectTile key={proj.slug} {...proj} />
             </motion.div>
           ))}
-        </div>
-      </motion.div>
-
-      {/* Recent Blog Posts */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-        className="mt-16 mb-12"
-      >
-        <ViewAllHeader title="Recent Blog Posts" pageUrl="/blog" itemCount={blog.length} />
-        <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-          {blog
-            .slice()
-            .sort((a, b) => getTimeSafe(b.date) - getTimeSafe(a.date))
-            .slice(0, 3)
-            .map(post => (
-              <motion.div
-                key={post.slug}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1 }}
-                viewport={{ once: true }}
-              >
-                <BlogPost {...post} />
-              </motion.div>
-            ))}
         </div>
       </motion.div>
     </section>
