@@ -13,7 +13,7 @@ const withMDX = createMDX({
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
-  output: "export" // wajib untuk static export ke Netlify
+  output: "export", // wajib untuk static export ke Netlify
 }
 
 export default withMDX(nextConfig)
