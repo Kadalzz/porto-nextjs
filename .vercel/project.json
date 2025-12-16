@@ -1,0 +1,12 @@
+{
+  "projectId": "prj_i4LD5RDCDdDxx0rUzMmOanQrW4Nl",
+  "orgId": "team_E9CNU2pSaaAbTVHMpLHW46sJ",
+  "projectName": "portfolio-nextjs",
+  "version": 2,
+  "build": {
+    "installCommand": "npm install",
+    "buildCommand": "npm run build",
+    "outputDirectory": ".next",
+    "env": {}
+  }
+}
