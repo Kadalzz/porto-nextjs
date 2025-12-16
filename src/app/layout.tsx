@@ -1,6 +1,4 @@
 import "./globals.css"
-import { Analytics } from "@vercel/analytics/next"
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Playfair_Display } from "next/font/google"
 import { ThemeProvider } from "next-themes"
 import React, { ReactNode } from "react"
