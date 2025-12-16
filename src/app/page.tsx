@@ -40,7 +40,7 @@ export default function Home() {
         className="text-center mt-2"
       >
         {/* Introductory Text */}
-       <h1 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-900 dark:text-gray-100">
+        <h1 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-900 dark:text-gray-100">
   Hi, I'm Richard Christian S 👋
 </h1>
 
@@ -60,11 +60,11 @@ export default function Home() {
 </p>
 
         {/* Quick Facts Section */}
-        <div className="mt-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Quick & Fun Facts</h2>
+<div className="mt-8 text-center">
+  <h2 className="text-3xl font-bold mb-4">Quick Facts</h2>
 
-          <div className="flex flex-wrap justify-center gap-3 px-4 max-w-4xl mx-auto">
-            {[
+  <div className="flex flex-wrap justify-center gap-3 px-4 max-w-4xl mx-auto">
+    {[
   { icon: FaUniversity, label: "Information Systems Student @ UTDI" },
   { icon: FaTools, label: "Web Developer (Laravel Focused)" },
   { icon: FaLanguage, label: "English / Indonesian" },
@@ -73,48 +73,47 @@ export default function Home() {
   { icon: FaMapMarkerAlt, label: "Yogyakarta, Indonesia" },
   { icon: FaGamepad, label: "Problem Solving Mindset" },
   { icon: FaSkiing, label: "Continuous Learning" },
-].map((fact, i) => {
-              const Icon = fact.icon
-              return (
-                <div
-                  key={i}
-                  className="flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-800
-                                    text-sm text-gray-700 dark:text-gray-300 rounded-full shadow-md transition"
-                >
-                  <Icon className="text-blue-500 dark:text-blue-400 text-base" />
-                  <span>{fact.label}</span>
-                </div>
-              )
-            })}
-          </div>
-        </div>
-      </motion.div>
-
-     {/* Work Experience */}
-<motion.div
-  initial={{ opacity: 0, y: 20 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 1 }}
-  viewport={{ once: true }}
-  className="mt-16"
+]
+.map((fact, i) => {
+      const Icon = fact.icon
+      return (
+        <div
+  key={i}
+  className="flex items-center gap-2 px-4 py-2 bg-[repeating-linear-gradient(135deg,#e5e7eb_0,#e5e7eb_1px,transparent_1px,transparent_6px)] dark:bg-[repeating-linear-gradient(135deg,#1f2937_0,#1f2937_1px,transparent_1px,transparent_6px)] text-sm text-gray-700 dark:text-gray-300 rounded-full shadow-md transition"
 >
-  <h2 className="text-2xl font-semibold mb-4">Work Experience</h2>
+  <Icon className="text-blue-500 dark:text-blue-400 text-base" />
+  <span>{fact.label}</span>
+</div>
 
-  <div className="grid gap-4">
-    {work.map((job, i) => (
+      )
+    })}
+  </div>
+</div>
+</motion.div>
+
+      {/* Recent Work */}
       <motion.div
-        key={i}
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
+        className="mt-16"
       >
-        <WorkItem {...job} />
+        <ViewAllHeader title="Work Experience" pageUrl="/work" itemCount={work.length} />
+        <div className="grid gap-4">
+          {work.slice(0, 3).map((job, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
+            >
+              <WorkItem {...job} />
+            </motion.div>
+          ))}
+        </div>
       </motion.div>
-    ))}
-  </div>
-</motion.div>
-
 
       {/* Recent Projects */}
       <motion.div

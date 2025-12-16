@@ -1,14 +1,14 @@
 const work = [
   {
-    slug: "photo-print-catalog",
-    company: "Photo Printing Shop",
-    title: "Web Developer",
+    slug: "aneka-warna-indah",
+    company: "Aneka Warna Indah",
+    title: "Freelance Web Developer",
     start: "January 2025",
     end: "May 2025",
     description:
-      "Developed a product catalog website for a photo printing shop, showcasing services, pricing, and product details to help customers browse and place orders more easily.",
-    locations: ["On-site / Remote"],
-    image: "/work/web.png",
+      "Developed and maintained a company website for Aneka Warna Indah as a freelance web developer. Responsible for building responsive web pages, implementing backend features, and maintaining the system using Laravel, PHP, JavaScript, HTML, and CSS.",
+    locations: ["Remote"],
+    logoUrl: "/work/work.png",
   },
 ]
 

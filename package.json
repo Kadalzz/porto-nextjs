@@ -3,22 +3,28 @@
   "version": "0.13.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export",
-    "start": "serve out",
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
+    "start": "next start",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint --fix .",
     "lint:check": "eslint . --max-warnings=0",
+    "lint-format": "eslint --fix . && prettier --write .",
+    "format-lint": "prettier --write . && eslint --fix .",
     "types:check": "tsc --noEmit"
   },
   "dependencies": {
+    "@mdx-js/loader": "3.1.1",
     "@mdx-js/react": "3.1.1",
-    "@next/mdx": "^16.0.10",
+    "@next/mdx": "16.0.10",
+    "@types/mdx": "^2.0.13",
+    "@vercel/analytics": "1.5.0",
+    "@vercel/speed-insights": "1.2.0",
     "framer-motion": "^12.9.1",
     "highlight.js": "^11.11.1",
     "next": "16.0.10",
-    "next-mdx-remote": "^5.0.0",
+    "next-mdx-remote": "5.0.0",
     "next-themes": "0.4.6",
     "react": "19.2.3",
     "react-dom": "19.2.3",
@@ -28,18 +34,21 @@
     "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "19.2.7",
-    "@types/react-dom": "19.2.3",
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@tailwindcss/typography": "^0.5.16",
+    "@types/node": "^20",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
     "eslint": "9.39.2",
     "eslint-config-next": "16.0.10",
     "eslint-config-prettier": "^10.1.8",
     "prettier": "3.6.2",
-    "serve": "^14.2.0",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "overrides": {
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3"
   }
 }

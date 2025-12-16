@@ -2,6 +2,7 @@ import createMDX from "@next/mdx"
 import remarkGfm from "remark-gfm"
 import type { NextConfig } from "next"
 
+// Create MDX configuration
 const withMDX = createMDX({
   extension: /\.(md|mdx)$/,
   options: {
@@ -11,9 +12,10 @@ const withMDX = createMDX({
 })
 
 const nextConfig: NextConfig = {
+  /* config options here */
   reactStrictMode: true,
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
-  output: "export", // wajib untuk static export ke Netlify
 }
 
+// Merge MDX config with Next.js config
 export default withMDX(nextConfig)
