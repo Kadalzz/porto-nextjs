@@ -3,12 +3,19 @@ import type { Metadata } from "next"
 import { ThemeProvider } from "next-themes"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
-import { Playfair_Display } from "next/font/google"
+import { Inter, Space_Grotesk } from "next/font/google"
 import type { ReactNode } from "react"
 
-const playfair = Playfair_Display({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-playfair",
+  variable: "--font-inter",
+  display: "swap",
+})
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+  display: "swap",
 })
 
 export const metadata: Metadata = {
@@ -36,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${playfair.className} antialiased flex flex-col min-h-screen transition-colors`}
+        className={`${inter.variable} ${spaceGrotesk.variable} font-sans antialiased flex flex-col min-h-screen transition-colors`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header />

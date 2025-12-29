@@ -10,6 +10,7 @@ import {
   FaSkiing,
   FaBuilding,
   FaTools,
+  FaFileDownload,
 } from "react-icons/fa"
 import BlogPost from "@/components/BlogPost"
 import ProjectTile from "@/components/ProjectTile"
@@ -88,6 +89,25 @@ export default function Home() {
       )
     })}
   </div>
+
+  {/* Download CV Button */}
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6, delay: 0.2 }}
+    viewport={{ once: true }}
+    className="mt-8"
+  >
+    <a
+      href="https://drive.google.com/file/d/11o81aa463ir3ZMx_FJNw5caSIZoCCRPO/view"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+    >
+      <FaFileDownload className="text-xl" />
+      <span>Download My CV</span>
+    </a>
+  </motion.div>
 </div>
 </motion.div>
 

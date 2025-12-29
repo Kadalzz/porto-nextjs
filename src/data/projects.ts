@@ -1,6 +1,6 @@
 const projects = [
   {
-    slug: "personal-portfolio",
+    slug: "personal-portofolio",
     title: "Personal Web Portfolio",
     image: "/work/port.jpg",
     description: "A personal website to showcase my profile, skills, and projects.",

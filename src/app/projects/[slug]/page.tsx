@@ -4,7 +4,7 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import { compileMDX } from "next-mdx-remote/rsc"
 import { BsStack, BsCardImage } from "react-icons/bs"
-import { FaUsers, FaUserTie, FaClock, FaGithub } from "react-icons/fa"
+import { FaUsers, FaUserTie, FaClock, FaGithub, FaExternalLinkAlt } from "react-icons/fa"
 import rehypeHighlight from "rehype-highlight"
 import remark_gfm from "remark-gfm"
 import AnimatedArticle from "@/components/AnimatedArticle"
@@ -47,6 +47,7 @@ export default async function ProjectPage(props: { params: pageParams }) {
     role: string
     duration: string
     githubUrl?: string
+    websiteUrl?: string
   }>({
     source: mdxSource,
     options: {
@@ -73,6 +74,21 @@ export default async function ProjectPage(props: { params: pageParams }) {
           >
             <FaGithub className="mr-2 w-5 h-5" />
             <span className="underline underline-offset-4">View on GitHub</span>
+          </Link>
+        </div>
+      )}
+
+      {/* Website Link Section */}
+      {frontmatter.websiteUrl && (
+        <div className="mb-4">
+          <Link
+            href={frontmatter.websiteUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center text-gray-800 dark:text-gray-100 hover:text-blue-600 transition"
+          >
+            <FaExternalLinkAlt className="mr-2 w-5 h-5" />
+            <span className="underline underline-offset-4">Visit Website</span>
           </Link>
         </div>
       )}
