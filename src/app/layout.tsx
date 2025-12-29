@@ -35,11 +35,7 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: ReactNode
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
@@ -47,9 +43,7 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header />
-          <main className="flex-grow container mx-auto px-4 py-6">
-            {children}
-          </main>
+          <main className="flex-grow container mx-auto px-4 py-6">{children}</main>
           <Footer />
         </ThemeProvider>
       </body>

@@ -12,7 +12,8 @@ const projects = [
     slug: "web-cetak-foto",
     title: "Photo Printing Web Application",
     image: "/work/web.png",
-    description: "A web-based photo printing service that allows users to upload photos and place print orders.",
+    description:
+      "A web-based photo printing service that allows users to upload photos and place print orders.",
     startDate: "2024",
     endDate: "2024",
     techStack: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
