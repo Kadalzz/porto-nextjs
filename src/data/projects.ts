@@ -21,7 +21,7 @@ const projects = [
   {
     slug: "web-toko-baju",
     title: "Online Clothing Store Website",
-    image: "/projects/project-B/toko-baju.jpg",
+    image: "/projects/project-B/toko-baju.png",
     description:
       "An e-commerce platform for selling clothing items with product catalog, shopping cart, and order management features.",
     startDate: "2024",
@@ -31,7 +31,7 @@ const projects = [
   {
     slug: "lms-anak-berkebutuhan-khusus",
     title: "LMS for Children with Special Needs",
-    image: "/projects/project-B/lms-special-needs.jpg",
+    image: "/projects/project-B/LMS.png",
     description:
       "An inclusive Learning Management System designed specifically for children with special needs, featuring adaptive learning modules and accessibility features.",
     startDate: "2024",
