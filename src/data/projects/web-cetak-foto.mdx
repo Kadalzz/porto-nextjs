@@ -1,0 +1,68 @@
+---
+title: "Photo Printing Web Application"
+teamSize: 1
+role: "Full Stack Developer"
+description: "A web-based photo printing service that allows users to upload photos, customize print options, and manage print orders efficiently."
+duration: "2025"
+techStack:
+  - PHP
+  - MySQL
+  - HTML
+  - CSS
+  - JavaScript
+websiteUrl: "https://awifoto.com/"
+---
+
+# Introduction
+
+Photo Printing Web Application is a web-based system designed to digitalize and simplify the photo printing process. Traditionally, photo printing services rely on manual order taking, which can be inefficient and prone to errors. This application addresses those challenges by providing an online platform where users can upload photos, configure printing options, and place orders without visiting a physical store.
+
+The system was developed as an individual project, focusing on both functionality and usability, making it suitable for small to medium-scale photo printing businesses.
+
+## Key Features
+
+### 1. Photo Upload
+
+Users can upload digital photos directly through the website. The system supports common image formats and performs basic validation to ensure file compatibility and size limits. Uploaded photos are stored securely on the server and linked to the corresponding user account and order.
+
+### 2. Print Order Management
+
+Users are able to select various print options such as photo size, quantity, and print type. Each selection dynamically updates the order details, helping users understand their order before confirmation.
+
+### 3. Order Tracking
+
+The application provides an order tracking feature that allows users or administrators to monitor the status of print orders, from submission to completion. This feature helps improve transparency and operational efficiency.
+
+### 4. Simple and User-Friendly Interface
+
+The user interface is designed to be clean, minimalistic, and easy to navigate. The goal is to ensure that users of all technical backgrounds can place print orders without confusion.
+
+## Technical Insights
+
+### Backend Development
+
+The backend is developed using PHP, which handles user requests, form processing, file uploads, and business logic. MySQL is used as the database management system to store user data, photo metadata, and order information.
+
+### Frontend Development
+
+The frontend is built using HTML, CSS, and JavaScript to create a responsive and interactive user experience. JavaScript is used to handle form validation and improve user interactions without requiring page reloads.
+
+### Database Design
+
+The database consists of several structured tables, including:
+
+- **Users**: Stores user information and authentication data.
+- **Photos**: Manages uploaded photo details and file references.
+- **Orders**: Records print orders, selected options, and order statuses.
+
+Relationships between tables are designed to maintain data consistency and support efficient query execution.
+
+## Challenges and Solutions
+
+One of the main challenges was handling file uploads securely while ensuring good performance. This was addressed by implementing file validation and organized directory structures. Another challenge involved designing a database structure that could scale with increasing orders, which was solved by normalizing tables and using relational keys effectively.
+
+## Outcome
+
+This application successfully streamlines the photo printing workflow and demonstrates the ability to build a complete full-stack web solution. The project showcases skills in backend development, frontend design, database management, and system integration, making it a valuable addition to a developer’s portfolio.
+
+The system can be further expanded with features such as online payments, admin dashboards, and email notifications for order updates.

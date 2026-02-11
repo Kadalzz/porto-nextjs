@@ -1,0 +1,96 @@
+---
+title: "Online Clothing Store Website"
+teamSize: 1
+role: "Full Stack Developer"
+description: "An e-commerce platform for selling clothing items with product catalog, shopping cart, and order management features."
+duration: "2024"
+techStack:
+  - React
+  - Node.js
+  - Express
+  - MongoDB
+  - TailwindCSS
+  - Stripe
+githubUrl: "https://github.com/Kadalzz/toko-baju"
+websiteUrl: "https://web-toko-baju.vercel.app/"
+---
+
+# Introduction
+
+Online Clothing Store Website is an e-commerce web application designed to provide a seamless online shopping experience for fashion enthusiasts. The platform allows customers to browse clothing collections, filter products by category, add items to their cart, and complete purchases through a secure payment system.
+
+This project was developed to demonstrate full-stack web development capabilities, including frontend user interface design, backend API development, database management, and payment gateway integration.
+
+## Key Features
+
+### 1. Product Catalog
+
+A comprehensive product catalog displays all available clothing items with high-quality images, detailed descriptions, pricing, available sizes, and color options. Users can easily browse through different categories such as shirts, pants, dresses, and accessories.
+
+### 2. Search and Filter
+
+Advanced search and filtering capabilities enable users to quickly find products based on category, price range, size, color, and brand. This feature significantly improves the shopping experience by reducing time spent searching for specific items.
+
+### 3. Shopping Cart
+
+An interactive shopping cart allows users to add multiple items, adjust quantities, remove products, and see real-time total calculations including subtotal, taxes, and shipping costs before proceeding to checkout.
+
+### 4. User Authentication
+
+Secure user registration and login system enables customers to create accounts, save their shipping addresses, track order history, and manage their profiles. Authentication is implemented with encrypted password storage and session management.
+
+### 5. Order Management
+
+After placing an order, users receive order confirmations and can track their order status. Administrators have access to a dashboard where they can manage orders, update order statuses, and handle customer inquiries.
+
+### 6. Payment Integration
+
+The platform integrates with Stripe payment gateway to process credit card payments securely. All sensitive payment information is handled by Stripe, ensuring PCI compliance and customer data protection.
+
+### 7. Responsive Design
+
+The website is fully responsive and optimized for desktop, tablet, and mobile devices, providing a consistent and enjoyable shopping experience across all screen sizes.
+
+## Technical Insights
+
+### Frontend Development
+
+The frontend is built using React, providing a dynamic and interactive user interface. React Router is used for navigation, and state management is handled through React Context API and custom hooks for efficient data flow throughout the application.
+
+### Styling and UI/UX
+
+TailwindCSS is utilized for rapid UI development with a utility-first approach. Custom components are designed to maintain consistency across the application while ensuring accessibility standards are met.
+
+### Backend Development
+
+The backend API is developed using Node.js and Express framework. RESTful API endpoints handle operations such as product retrieval, user authentication, cart management, and order processing. Middleware functions are implemented for authentication, error handling, and request validation.
+
+### Database Design
+
+MongoDB is used as the database solution, offering flexibility with document-based storage. Collections include:
+
+- **Users**: Store user credentials, profile information, and addresses
+- **Products**: Contain product details, inventory levels, and pricing
+- **Orders**: Track order information, items purchased, and order status
+- **Categories**: Organize products into logical groupings
+
+### Security Measures
+
+Security best practices are implemented including:
+- Password hashing using bcrypt
+- JWT tokens for authentication
+- Input validation and sanitization
+- HTTPS encryption for data transmission
+- Environment variables for sensitive configuration
+
+## Challenges and Solutions
+
+One major challenge was implementing a real-time inventory management system to prevent overselling. This was solved by implementing database transactions and optimistic locking mechanisms.
+
+Another challenge involved optimizing image loading performance for product photos. This was addressed by implementing lazy loading, image compression, and CDN integration for faster content delivery.
+
+## Outcome
+
+This online clothing store successfully demonstrates the ability to build a complete e-commerce solution from scratch. The project showcases proficiency in modern web development technologies, payment integration, security implementation, and user experience design.
+
+Future enhancements could include features such as product reviews and ratings, wishlist functionality, email marketing integration, and advanced analytics for tracking user behavior and sales trends.

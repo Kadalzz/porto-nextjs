@@ -1,0 +1,110 @@
+---
+title: "LMS for Children with Special Needs"
+teamSize: 3
+role: "Lead Developer"
+description: "An inclusive Learning Management System designed specifically for children with special needs, featuring adaptive learning modules and accessibility features."
+duration: "2024 - 2025"
+techStack:
+  - Next.js
+  - TypeScript
+  - PostgreSQL
+  - Prisma
+  - TailwindCSS
+  - WebRTC
+githubUrl: "https://github.com/Kadalzz/lms-special-needs"
+websiteUrl: "https://edu-project-peach.vercel.app/"
+---
+
+# Introduction
+
+LMS for Children with Special Needs is a specialized Learning Management System designed to provide an inclusive and accessible educational platform for children with various special needs, including autism spectrum disorder, dyslexia, ADHD, and physical disabilities. The system focuses on adaptive learning approaches, multimodal content delivery, and customizable user interfaces to accommodate diverse learning styles and abilities.
+
+This project was developed in collaboration with special education professionals and therapists to ensure the platform meets real educational needs and follows evidence-based teaching methodologies.
+
+## Key Features
+
+### 1. Adaptive Learning Modules
+
+The system offers customizable learning modules that can be tailored to each child's individual needs and learning pace. Content difficulty automatically adjusts based on student performance, ensuring appropriate challenge levels without causing frustration or disengagement.
+
+### 2. Multimodal Content Delivery
+
+Learning materials are presented through multiple formats including visual aids, audio narration, video demonstrations, and interactive exercises. This multimodal approach helps accommodate different learning preferences and sensory needs.
+
+### 3. Visual and Audio Aids
+
+Enhanced accessibility features include text-to-speech functionality for reading assistance, visual schedules for activity planning, picture-based communication symbols, and adjustable audio speeds to support auditory processing.
+
+### 4. Progress Tracking and Analytics
+
+Comprehensive progress tracking allows teachers and parents to monitor student performance, identify areas of strength and challenge, and adjust learning strategies accordingly. Visual dashboards present data in easy-to-understand formats.
+
+### 5. Interactive Assessments
+
+Assessments are designed to be engaging and stress-free, using gamification elements, immediate feedback, and multiple attempt options. Various question types accommodate different response capabilities, including multiple choice, drag-and-drop, and voice responses.
+
+### 6. Communication Tools
+
+Built-in communication features enable real-time interaction between students, teachers, and parents. Video conferencing capabilities support virtual tutoring sessions and parent-teacher conferences.
+
+### 7. Sensory-Friendly Interface
+
+The user interface can be customized to reduce sensory overload, with options to adjust color schemes, reduce animations, simplify layouts, and control sound settings. High contrast modes and screen reader compatibility ensure accessibility for visually impaired users.
+
+### 8. Reward System
+
+A positive reinforcement system uses visual rewards, achievement badges, and progress celebrations to motivate students and build confidence. Rewards are customizable based on individual student preferences and therapeutic recommendations.
+
+## Technical Insights
+
+### Frontend Development
+
+The application is built using Next.js and TypeScript, providing type-safe development and excellent performance through server-side rendering and static generation. React components are designed with accessibility as a priority, following WCAG guidelines.
+
+### Accessibility Implementation
+
+Advanced accessibility features include:
+- ARIA labels and semantic HTML for screen readers
+- Keyboard navigation support throughout the application
+- Focus management for better navigation flow
+- Skip links for quick access to main content
+- Adjustable text sizes and spacing options
+
+### Backend Development
+
+The backend leverages Next.js API routes for serverless functions, handling user authentication, content management, progress tracking, and data analytics. Business logic is separated into service layers for maintainability.
+
+### Database Architecture
+
+PostgreSQL is used as the relational database with Prisma ORM for type-safe database queries. The schema includes:
+
+- **Users**: Students, teachers, parents, and therapists with role-based access
+- **Courses**: Learning modules with adaptive difficulty settings
+- **Content**: Multimodal learning materials with metadata
+- **Progress**: Detailed student performance and activity logs
+- **Assessments**: Questions, answers, and evaluation criteria
+- **Communication**: Messages and session recordings
+
+### Real-Time Communication
+
+WebRTC technology enables real-time video and audio communication for virtual tutoring sessions. Socket connections handle instant messaging and live collaboration features.
+
+### Content Management
+
+A robust content management system allows educators to create, organize, and customize learning materials. Template libraries provide pre-designed content that follows special education best practices.
+
+## Challenges and Solutions
+
+One significant challenge was designing an interface that could accommodate vastly different accessibility needs simultaneously. This was solved by implementing a preferences system that stores individual user settings and applies them consistently across the platform.
+
+Another challenge involved creating content that was both educational and engaging for children with attention difficulties. This was addressed through consultation with special education experts and iterative user testing with target audiences.
+
+Performance optimization was critical, as many users might have limited internet connectivity. Solutions included progressive image loading, efficient caching strategies, and offline capability for certain features.
+
+## Outcome
+
+This LMS successfully provides an inclusive educational environment that empowers children with special needs to learn at their own pace with appropriate support. The platform demonstrates the ability to develop sophisticated applications that address real-world social challenges with empathy and technical excellence.
+
+The project showcases expertise in accessibility implementation, educational technology, real-time communication systems, and user-centered design principles. It represents a meaningful contribution to making education more accessible and equitable.
+
+Future enhancements could include AI-powered learning recommendations, expanded content libraries, integration with assistive devices, and mobile applications for on-the-go learning.
